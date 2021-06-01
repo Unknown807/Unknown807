@@ -1,3 +1,6 @@
+import random as rand
+from get_cards import AsyncRequests
+
 card_ids = {
     "classic": ['EX1_621', 'EX1_607', 'EX1_145', 'EX1_144', 'EX1_332', 'CS2_231', 'CS2_188', 'EX1_009', 'EX1_008', 'EX1_549', 'EX1_363', 'CS2_059', 'NEW1_025', 'EX1_243', 'EX1_245', 'EX1_132', 'EX1_319', 'EX1_544', 'EX1_251', 'NEW1_017', 'CS1_129', 'EX1_029', 'EX1_238', 'EX1_001', 'NEW1_012', 'EX1_509', 'EX1_130', 'EX1_136', 'EX1_379', 'EX1_578', 'EX1_080', 'EX1_410', 'EX1_405', 'CS2_146', 'EX1_409', 'EX1_010', 'CS2_169', 'EX1_004', 'EX1_393', 'CS2_038', 
                 'EX1_045', 'EX1_362', 'EX1_402', 'EX1_392', 'EX1_126', 'CS2_233', 'EX1_012', 'NEW1_018', 'CS2_073', 'NEW1_036', 'EX1_059', 'EX1_603', 'EX1_131', 'EX1_596', 'EX1_162', 'NEW1_021', 'EX1_124', 'EX1_610', 'NEW1_023', 'EX1_611', 'NEW1_019', 'EX1_341', 'EX1_096', 'EX1_100', 'EX1_082', 'EX1_055', 'EX1_616', 'NEW1_037', 'NEW1_029', 'EX1_533', 'EX1_557', 'EX1_522', 'EX1_076', 
@@ -11,3 +14,31 @@ card_ids = {
 
     "wotog": ['OG_086', 'OG_198', 'OG_114', 'OG_101', 'OG_070', 'OG_314', 'OG_223', 'OG_027', 'OG_179', 'OG_051', 'OG_072', 'OG_312', 'OG_061', 'OG_241', 'OG_023', 'OG_221', 'OG_123', 'OG_151', 'OG_006', 'OG_158', 'OG_311', 'OG_281', 'OG_156', 'OG_303', 'OG_109', 'OG_326', 'OG_104', 'OG_026', 'OG_048', 'OG_338', 'OG_118', 'OG_081', 'OG_206', 'OG_284', 'OG_247', 'OG_330', 'OG_313', 'OG_248', 'OG_276', 'OG_315', 'OG_325', 'OG_113', 'OG_162', 'OG_047', 'OG_292', 'OG_045', 'OG_222', 'OG_149', 'OG_176', 'OG_034', 'OG_256', 'OG_116', 'OG_327', 'OG_310', 'OG_286', 'OG_083', 'OG_150', 'OG_322', 'OG_218', 'OG_283', 'OG_337', 'OG_085', 'OG_254', 'OG_082', 'OG_174', 'OG_044', 'OG_024', 'OG_334', 'OG_249', 'OG_216', 'OG_188', 'OG_328', 'OG_320', 'OG_202', 'OG_323', 'OG_100', 'OG_335', 'OG_267', 'OG_272', 'OG_080', 'OG_090', 'OG_147', 'OG_321', 'OG_295', 'OG_234', 'OG_102', 'OG_209', 'OG_031', 'OG_094', 'OG_309', 'OG_145', 'OG_087', 'OG_291', 'OG_273', 'OG_033', 'OG_096', 'OG_302', 'OG_200', 'OG_290', 'OG_161', 'OG_293', 'OG_207', 'OG_316', 'OG_122', 'OG_138', 'OG_271', 'OG_339', 'OG_028', 'OG_073', 'OG_301', 'OG_153', 'OG_121', 'OG_152', 'OG_318', 'OG_220', 'OG_131', 'OG_195', 'OG_120', 'OG_211', 'OG_255', 'OG_142', 'OG_308', 'OG_229', 'OG_300', 'OG_282', 'OG_173', 'OG_340', 'OG_280', 'OG_317', 'OG_239', 'OG_141', 'OG_133', 'OG_042', 'OG_134'],
 }
+
+headers = {
+	"x-rapidapi-key": "",
+	"x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
+	"useQueryString": "true"
+}
+
+# 10% chance for a card to be golden
+golden_prob = [False,]*9+[True,]
+
+urls = [
+    "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/"+rand.choice(card_ids["classic"]) for i in range(5)
+]
+
+cards = AsyncRequests.run(urls, headers=headers)
+
+card_imgs = []
+
+for card in cards:
+    card_data=card[0][0]
+    if "imgGold" in card_data:
+        if (rand.choice(golden_prob)):
+            card_imgs.append(card_data["imgGold"])
+            continue
+    
+    card_imgs.append(card_data["img"])
+                
+    
