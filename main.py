@@ -1,4 +1,6 @@
+import os
 import random as rand
+from github import Github
 from get_cards import AsyncRequests
 
 card_ids = {
@@ -16,29 +18,60 @@ card_ids = {
 }
 
 headers = {
-	"x-rapidapi-key": "",
+	"x-rapidapi-key": os.environ["api_key"],
 	"x-rapidapi-host": "omgvamp-hearthstone-v1.p.rapidapi.com",
 	"useQueryString": "true"
 }
 
+issue_title = os.environ["issue_title"]
+
+urls = [
+    "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/"+rand.choice(card_ids[issue_title]) for i in range(5)
+]
+
 # 10% chance for a card to be golden
 golden_prob = [False,]*9+[True,]
 
-urls = [
-    "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/"+rand.choice(card_ids["classic"]) for i in range(5)
-]
+def get_card_imgs():
+    try:
+        cards = AsyncRequests.run(urls, headers=headers)
+    except:
+        issue_body = "Sorry, there was an error requesting the api, try again later."
+        return (False, issue_body)
 
-cards = AsyncRequests.run(urls, headers=headers)
+    card_imgs = []
 
-card_imgs = []
-
-for card in cards:
-    card_data=card[0][0]
-    if "imgGold" in card_data:
-        if (rand.choice(golden_prob)):
-            card_imgs.append(card_data["imgGold"])
-            continue
+    for card in cards:
+        card_data=card[0][0]
+        if "imgGold" in card_data:
+            if (rand.choice(golden_prob)):
+                card_imgs.append(card_data["imgGold"])
+                continue
+        
+        card_imgs.append(card_data["img"])
     
-    card_imgs.append(card_data["img"])
+    return (True, card_imgs)
                 
+if __name__ == "__main__":
+    data = get_card_imgs()
     
+    try:
+        g = Github(os.environ["access_token"])
+
+        repo = g.get_repo("Unknown807/Unknown807")
+        issue = repo.get_issue(number=os.environ["issue_num"])
+
+        if (data[0]):
+            issue.create_comment("""Here are your cards:
+            ![No Image, Sorry]({})
+            ![No Image, Sorry]({})
+            ![No Image, Sorry]({})
+            ![No Image, Sorry]({})
+            ![No Image, Sorry]({})
+            """.format(*data[1]))
+        else:
+            issue.create_comment(data[1])
+        
+        issue.edit(state="closed")
+    except:
+        pass
