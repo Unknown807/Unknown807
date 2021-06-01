@@ -24,6 +24,7 @@ headers = {
 }
 
 issue_title = os.environ["issue_title"]
+issue_title = issue_title.split("|")[1].lower()
 
 urls = [
     "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/"+rand.choice(card_ids[issue_title]) for i in range(5)
@@ -59,7 +60,7 @@ if __name__ == "__main__":
         g = Github(os.environ["access_token"])
 
         repo = g.get_repo("Unknown807/Unknown807")
-        issue = repo.get_issue(number=os.environ["issue_num"])
+        issue = repo.get_issue(number=int(os.environ["issue_num"]))
 
         if (data[0]):
             issue.create_comment("""Here are your cards:
