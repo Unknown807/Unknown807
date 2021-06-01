@@ -6,7 +6,7 @@ I create many personal projects and always do a lot of planning, research and de
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Unknown807&layout=compact)
 
-One of my favourite games to play is Hearthstone, so I made a fun pack opening activity using Github Actions and Python. Click to open any one the packs from my favourite expansions of the game to date:
+One of my favourite games to play is Hearthstone, so I made a fun pack opening activity using Github Actions and Python. Click to open any one the packs from my favourite parts/expansions of the game to date:
 
 <div align="center">
   
