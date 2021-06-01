@@ -1,0 +1,37 @@
+name: OpenPacks
+
+on:
+  issues:
+    types: [opened]
+    
+jobs:
+  open-pack:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'open pack|')
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Cache Pip
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+        
+      - name: Open Chosen Card Pack
+        run: python3 main.py
+        env:
+          api_key: ${{ secrets.API_KEY }}
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+          issue_title: ${{ github.event.issue.title }}
+          issue_num: ${{ github.event.issue.number }}
