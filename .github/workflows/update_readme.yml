@@ -1,0 +1,40 @@
+name: Update Top Languages
+
+on:
+  schedule:
+   - cron: '0 0 * * 0'
+  workflow_dispatch:
+    
+jobs:
+  update-top-languages:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Cache Pip
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
+      - name: Install Github
+        run: pip install PyGithub==1.55
+        
+      - name: Update Readme
+        run: python3 get_languages.py
+        env:
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+        
+      - name: Check and Update Readme
+        run: |
+          chmod +x push_changes.sh
+          ./push_changes.sh
+        shell: bash
