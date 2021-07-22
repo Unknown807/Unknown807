@@ -1,0 +1,217 @@
+<svg style="background-color: white;" fill="none" viewBox="0 0 500 400" width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+        
+            <style>
+                h3 {
+                    font-family: 'San Francisco', 'SNFS Display', BlinkMacSystemFont, "Segoe UI", Roboto, 
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                }
+
+                #top-5-langs div,
+                #other-langs div {
+                    color: white;
+                    font-family: sans-serif;
+		    font-weight: bold;
+		    font-size: 12px;
+		    line-height: 20px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		#top-5-langs,
+		#other-langs {
+		    border-radius: 5px;
+		    overflow: hidden;
+		    display: grid;
+		}
+
+		#top-5-langs {
+                    grid-template-columns: 43.8fr 28.4fr 11.0fr 8.6fr 8.1fr;
+		}
+
+		#other-langs {
+                    grid-template-columns: 28.6fr 19.6fr 19.3fr 19.1fr 10.6fr 2.8fr;
+		}
+
+                .legend {
+                    display: grid;
+                    grid-gap: 10px;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            
+                
+    #TypeScriptperc {
+        background: #2b7489;
+    }
+
+    #TypeScripttext {
+        color: #2b7489;
+        font-size: 24px;
+    }
+    
+    #Twigperc {
+        background: #c1d026;
+    }
+
+    #Twigtext {
+        color: #c1d026;
+        font-size: 24px;
+    }
+    
+    #CSSperc {
+        background: #563d7c;
+    }
+
+    #CSStext {
+        color: #563d7c;
+        font-size: 24px;
+    }
+    
+    #Kotlinperc {
+        background: #A97BFF;
+    }
+
+    #Kotlintext {
+        color: #A97BFF;
+        font-size: 24px;
+    }
+    
+    #Rperc {
+        background: #198CE7;
+    }
+
+    #Rtext {
+        color: #198CE7;
+        font-size: 24px;
+    }
+    
+    #Shellperc {
+        background: #89e051;
+    }
+
+    #Shelltext {
+        color: #89e051;
+        font-size: 24px;
+    }
+    
+                
+    #Pythonperc {
+        background: #3572A5;
+    }
+
+    #Pythontext {
+        color: #3572A5;
+        font-size: 24px;
+    }
+    
+    #Javaperc {
+        background: #b07219;
+    }
+
+    #Javatext {
+        color: #b07219;
+        font-size: 24px;
+    }
+    
+    #HTMLperc {
+        background: #e34c26;
+    }
+
+    #HTMLtext {
+        color: #e34c26;
+        font-size: 24px;
+    }
+    
+    #PHPperc {
+        background: #4F5D95;
+    }
+
+    #PHPtext {
+        color: #4F5D95;
+        font-size: 24px;
+    }
+    
+    #JavaScriptperc {
+        background: #f1e05a;
+    }
+
+    #JavaScripttext {
+        color: #f1e05a;
+        font-size: 24px;
+    }
+    
+            </style>
+
+            <h3>My Top 5 Used Languages</h3>
+            
+            <div id="top-5-langs">
+                
+    <div id="Pythonperc">43.8%</div>
+    
+    <div id="Javaperc">28.4%</div>
+    
+    <div id="HTMLperc">11.0%</div>
+    
+    <div id="PHPperc">8.6%</div>
+    
+    <div id="JavaScriptperc">8.1%</div>
+    
+            </div>
+
+            <br />
+            
+            <div class="legend">
+                
+    <div id="Pythontext">Python</div>  
+    
+    <div id="Javatext">Java</div>  
+    
+    <div id="HTMLtext">HTML</div>  
+    
+    <div id="PHPtext">PHP</div>  
+    
+    <div id="JavaScripttext">JavaScript</div>  
+    
+            </div>
+
+            <h3>My Other Used Languages</h3>
+            
+            <div id="other-langs">
+                
+    <div id="TypeScriptperc">28.6%</div>
+    
+    <div id="Twigperc">19.6%</div>
+    
+    <div id="CSSperc">19.3%</div>
+    
+    <div id="Kotlinperc">19.1%</div>
+    
+    <div id="Rperc">10.6%</div>
+    
+    <div id="Shellperc">2.8%</div>
+    
+            </div>
+
+            <br />
+                
+            <div class="legend">
+                
+    <div id="TypeScripttext">TypeScript</div>  
+    
+    <div id="Twigtext">Twig</div>  
+    
+    <div id="CSStext">CSS</div>  
+    
+    <div id="Kotlintext">Kotlin</div>  
+    
+    <div id="Rtext">R</div>  
+    
+    <div id="Shelltext">Shell</div>  
+    
+            </div>
+        
+        </div>
+    </foreignObject>
+</svg>
