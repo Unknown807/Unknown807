@@ -168,7 +168,7 @@ svg = """<svg style="background-color: white;" fill="none" viewBox="0 0 500 400"
 with open("languages.svg", "w") as f:
     f.write(svg)
 
-new_readme = """#Hi There 👋
+new_readme = """## Hi There 👋
 
 I've always been interested in creating new and optimal solutions to problems I encounter. It has led me to become interested in programming and new practical technologies and passionate about Computer Science overall.
 
