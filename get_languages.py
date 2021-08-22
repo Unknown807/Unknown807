@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 from github import Github
 
 g = Github(os.environ["access_token"])
@@ -170,6 +171,8 @@ with open("languages.svg", "w") as f:
 
 new_readme = """## Hi There 👋
 
+Last Updated: {}
+
 I've always been interested in creating new and optimal solutions to problems I encounter. It has led me to become interested in programming and new practical technologies and passionate about Computer Science overall.
 
 I create many personal projects and always do a lot of planning, research and design. Here are the languages I have used the most:
@@ -199,7 +202,7 @@ One of my favourite games to play is Hearthstone, so I made a fun pack opening a
   </div>
 
 </div>
-"""
+""".format(datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
 
 with open("README.md", "w") as f:
     f.write(new_readme)
