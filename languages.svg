@@ -32,7 +32,7 @@
 		}
 
 		#other-langs {
-                    grid-template-columns: 27.2fr 23.2fr 18.7fr 18.2fr 10.1fr 2.6fr;
+                    grid-template-columns: 25.8fr 22.0fr 17.7fr 17.3fr 9.6fr 5.0fr 2.5fr;
 		}
 
                 .legend {
@@ -84,6 +84,15 @@
 
     #Rtext {
         color: #198CE7;
+        font-size: 24px;
+    }
+    
+    #Haskellperc {
+        background: #5e5086;
+    }
+
+    #Haskelltext {
+        color: #5e5086;
         font-size: 24px;
     }
     
@@ -180,17 +189,19 @@
             
             <div id="other-langs">
                 
-    <div id="TypeScriptperc">27.2%</div>
+    <div id="TypeScriptperc">25.8%</div>
     
-    <div id="CSSperc">23.2%</div>
+    <div id="CSSperc">22.0%</div>
     
-    <div id="Twigperc">18.7%</div>
+    <div id="Twigperc">17.7%</div>
     
-    <div id="Kotlinperc">18.2%</div>
+    <div id="Kotlinperc">17.3%</div>
     
-    <div id="Rperc">10.1%</div>
+    <div id="Rperc">9.6%</div>
     
-    <div id="Shellperc">2.6%</div>
+    <div id="Haskellperc">5.0%</div>
+    
+    <div id="Shellperc">2.5%</div>
     
             </div>
 
@@ -207,6 +218,8 @@
     <div id="Kotlintext">Kotlin</div>  
     
     <div id="Rtext">R</div>  
+    
+    <div id="Haskelltext">Haskell</div>  
     
     <div id="Shelltext">Shell</div>  
     
