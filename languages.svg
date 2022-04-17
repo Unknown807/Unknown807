@@ -28,11 +28,11 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 42.7fr 28.6fr 12.8fr 10.3fr 5.7fr;
+                    grid-template-columns: 45.0fr 30.1fr 13.4fr 6.0fr 5.5fr;
 		}
 
 		#other-langs {
-                    grid-template-columns: 25.8fr 22.0fr 17.7fr 17.3fr 9.6fr 5.0fr 2.5fr;
+                    grid-template-columns: 50.2fr 27.9fr 14.6fr 7.2fr;
 		}
 
                 .legend {
@@ -42,33 +42,6 @@
                 }
             
                 
-    #TypeScriptperc {
-        background: #2b7489;
-    }
-
-    #TypeScripttext {
-        color: #2b7489;
-        font-size: 24px;
-    }
-    
-    #CSSperc {
-        background: #563d7c;
-    }
-
-    #CSStext {
-        color: #563d7c;
-        font-size: 24px;
-    }
-    
-    #Twigperc {
-        background: #c1d026;
-    }
-
-    #Twigtext {
-        color: #c1d026;
-        font-size: 24px;
-    }
-    
     #Kotlinperc {
         background: #A97BFF;
     }
@@ -133,15 +106,6 @@
         font-size: 24px;
     }
     
-    #HTMLperc {
-        background: #e34c26;
-    }
-
-    #HTMLtext {
-        color: #e34c26;
-        font-size: 24px;
-    }
-    
     #PHPperc {
         background: #4F5D95;
     }
@@ -151,21 +115,30 @@
         font-size: 24px;
     }
     
+    #TypeScriptperc {
+        background: #2b7489;
+    }
+
+    #TypeScripttext {
+        color: #2b7489;
+        font-size: 24px;
+    }
+    
             </style>
 
             <h3>My Top 5 Used Languages</h3>
             
             <div id="top-5-langs">
                 
-    <div id="Pythonperc">42.7%</div>
+    <div id="Pythonperc">45.0%</div>
     
-    <div id="Javaperc">28.6%</div>
+    <div id="Javaperc">30.1%</div>
     
-    <div id="JavaScriptperc">12.8%</div>
+    <div id="JavaScriptperc">13.4%</div>
     
-    <div id="HTMLperc">10.3%</div>
+    <div id="PHPperc">6.0%</div>
     
-    <div id="PHPperc">5.7%</div>
+    <div id="TypeScriptperc">5.5%</div>
     
             </div>
 
@@ -179,9 +152,9 @@
     
     <div id="JavaScripttext">JavaScript</div>  
     
-    <div id="HTMLtext">HTML</div>  
-    
     <div id="PHPtext">PHP</div>  
+    
+    <div id="TypeScripttext">TypeScript</div>  
     
             </div>
 
@@ -189,19 +162,13 @@
             
             <div id="other-langs">
                 
-    <div id="TypeScriptperc">25.8%</div>
+    <div id="Kotlinperc">50.2%</div>
     
-    <div id="CSSperc">22.0%</div>
+    <div id="Rperc">27.9%</div>
     
-    <div id="Twigperc">17.7%</div>
+    <div id="Haskellperc">14.6%</div>
     
-    <div id="Kotlinperc">17.3%</div>
-    
-    <div id="Rperc">9.6%</div>
-    
-    <div id="Haskellperc">5.0%</div>
-    
-    <div id="Shellperc">2.5%</div>
+    <div id="Shellperc">7.2%</div>
     
             </div>
 
@@ -209,12 +176,6 @@
                 
             <div class="legend">
                 
-    <div id="TypeScripttext">TypeScript</div>  
-    
-    <div id="CSStext">CSS</div>  
-    
-    <div id="Twigtext">Twig</div>  
-    
     <div id="Kotlintext">Kotlin</div>  
     
     <div id="Rtext">R</div>  
