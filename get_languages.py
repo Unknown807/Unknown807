@@ -194,18 +194,18 @@ I create many personal projects and always do a lot of planning, research and de
 
 <div align="center">
     <img src="/toolimgs/bootstrap.svg", width="75", height="75"/>
-    <img src="/toolimgs/codeigniter.svg", width="75", height="75"/>
     <img src="/toolimgs/css3.svg", width="75", height="75"/>
-    <img src="/toolimgs/electron.svg", width="75", height="75"/>
     <img src="/toolimgs/html5.svg", width="75", height="75"/>
-    <img src="/toolimgs/intellij.svg", width="75", height="75"/>
+    <img src="/toolimgs/codeigniter.svg", width="75", height="75"/>
     <img src="/toolimgs/jquery.svg", width="75", height="75"/>
+    <img src="/toolimgs/vscode.svg", width="75", height="75"/>
+    <img src="/toolimgs/intellij.svg", width="75", height="75"/>
     <img src="/toolimgs/linux.svg", width="75", height="75"/>
+    <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
     <img src="/toolimgs/mysql.svg", width="75", height="75"/>
     <img src="/toolimgs/nodejs.svg", width="75", height="75"/>
-    <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
+    <img src="/toolimgs/electron.svg", width="75", height="75"/>
     <img src="/toolimgs/trello.svg", width="75", height="75"/>
-    <img src="/toolimgs/vscode.svg", width="75", height="75"/>
 </div>
 
 <br />
