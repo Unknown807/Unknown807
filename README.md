@@ -1,6 +1,6 @@
 ## Hi There 👋
 
-Last Updated: 2022-04-17-17:31:51
+Last Updated: 2022-04-21-16:45:40
 
 I've always been interested in creating new and optimal solutions to problems I encounter. It has led me to become interested in programming and new practical technologies and passionate about Computer Science overall.
 
@@ -24,6 +24,7 @@ I create many personal projects and always do a lot of planning, research and de
     <img src="/toolimgs/jquery.svg", width="75", height="75"/>
     <img src="/toolimgs/vscode.svg", width="75", height="75"/>
     <img src="/toolimgs/intellij.svg", width="75", height="75"/>
+    <img src="/toolimgs/composer.svg", width="75", height="75"/>
     <img src="/toolimgs/linux.svg", width="75", height="75"/>
     <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
     <img src="/toolimgs/mysql.svg", width="75", height="75"/>
