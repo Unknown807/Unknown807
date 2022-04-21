@@ -200,6 +200,7 @@ I create many personal projects and always do a lot of planning, research and de
     <img src="/toolimgs/jquery.svg", width="75", height="75"/>
     <img src="/toolimgs/vscode.svg", width="75", height="75"/>
     <img src="/toolimgs/intellij.svg", width="75", height="75"/>
+    <img src="/toolimgs/composer.svg", width="75", height="75"/>
     <img src="/toolimgs/linux.svg", width="75", height="75"/>
     <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
     <img src="/toolimgs/mysql.svg", width="75", height="75"/>
