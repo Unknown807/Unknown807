@@ -28,7 +28,7 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 76.6fr 9.2fr 6.9fr 6.1fr 1.1fr;
+                    grid-template-columns: 40.6fr 27.0fr 15.4fr 12.1fr 5.0fr;
 		}
 
 		#other-langs {
@@ -79,15 +79,6 @@
     }
     
                 
-    #PHPperc {
-        background: #4F5D95;
-    }
-
-    #PHPtext {
-        color: #4F5D95;
-        font-size: 24px;
-    }
-    
     #Pythonperc {
         background: #3572A5;
     }
@@ -97,21 +88,30 @@
         font-size: 24px;
     }
     
-    #JavaScriptperc {
-        background: #f1e05a;
-    }
-
-    #JavaScripttext {
-        color: #f1e05a;
-        font-size: 24px;
-    }
-    
     #Javaperc {
         background: #b07219;
     }
 
     #Javatext {
         color: #b07219;
+        font-size: 24px;
+    }
+    
+    #PHPperc {
+        background: #4F5D95;
+    }
+
+    #PHPtext {
+        color: #4F5D95;
+        font-size: 24px;
+    }
+    
+    #JavaScriptperc {
+        background: #f1e05a;
+    }
+
+    #JavaScripttext {
+        color: #f1e05a;
         font-size: 24px;
     }
     
@@ -130,15 +130,15 @@
             
             <div id="top-5-langs">
                 
-    <div id="PHPperc">76.6%</div>
+    <div id="Pythonperc">40.6%</div>
     
-    <div id="Pythonperc">9.2%</div>
+    <div id="Javaperc">27.0%</div>
     
-    <div id="JavaScriptperc">6.9%</div>
+    <div id="PHPperc">15.4%</div>
     
-    <div id="Javaperc">6.1%</div>
+    <div id="JavaScriptperc">12.1%</div>
     
-    <div id="TypeScriptperc">1.1%</div>
+    <div id="TypeScriptperc">5.0%</div>
     
             </div>
 
@@ -146,13 +146,13 @@
             
             <div class="legend">
                 
-    <div id="PHPtext">PHP</div>  
-    
     <div id="Pythontext">Python</div>  
     
-    <div id="JavaScripttext">JavaScript</div>  
-    
     <div id="Javatext">Java</div>  
+    
+    <div id="PHPtext">PHP</div>  
+    
+    <div id="JavaScripttext">JavaScript</div>  
     
     <div id="TypeScripttext">TypeScript</div>  
     
