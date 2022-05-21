@@ -28,11 +28,11 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 40.6fr 27.0fr 15.4fr 12.1fr 5.0fr;
+                    grid-template-columns: 47.8fr 29.0fr 11.0fr 8.6fr 3.5fr;
 		}
 
 		#other-langs {
-                    grid-template-columns: 50.2fr 27.9fr 14.6fr 7.2fr;
+                    grid-template-columns: 46.9fr 26.1fr 13.7fr 6.7fr 6.6fr;
 		}
 
                 .legend {
@@ -78,22 +78,31 @@
         font-size: 24px;
     }
     
-                
-    #Pythonperc {
-        background: #3572A5;
+    #Erlangperc {
+        background: #B83998;
     }
 
-    #Pythontext {
-        color: #3572A5;
+    #Erlangtext {
+        color: #B83998;
         font-size: 24px;
     }
     
+                
     #Javaperc {
         background: #b07219;
     }
 
     #Javatext {
         color: #b07219;
+        font-size: 24px;
+    }
+    
+    #Pythonperc {
+        background: #3572A5;
+    }
+
+    #Pythontext {
+        color: #3572A5;
         font-size: 24px;
     }
     
@@ -130,15 +139,15 @@
             
             <div id="top-5-langs">
                 
-    <div id="Pythonperc">40.6%</div>
+    <div id="Javaperc">47.8%</div>
     
-    <div id="Javaperc">27.0%</div>
+    <div id="Pythonperc">29.0%</div>
     
-    <div id="PHPperc">15.4%</div>
+    <div id="PHPperc">11.0%</div>
     
-    <div id="JavaScriptperc">12.1%</div>
+    <div id="JavaScriptperc">8.6%</div>
     
-    <div id="TypeScriptperc">5.0%</div>
+    <div id="TypeScriptperc">3.5%</div>
     
             </div>
 
@@ -146,9 +155,9 @@
             
             <div class="legend">
                 
-    <div id="Pythontext">Python</div>  
-    
     <div id="Javatext">Java</div>  
+    
+    <div id="Pythontext">Python</div>  
     
     <div id="PHPtext">PHP</div>  
     
@@ -162,13 +171,15 @@
             
             <div id="other-langs">
                 
-    <div id="Kotlinperc">50.2%</div>
+    <div id="Kotlinperc">46.9%</div>
     
-    <div id="Rperc">27.9%</div>
+    <div id="Rperc">26.1%</div>
     
-    <div id="Haskellperc">14.6%</div>
+    <div id="Haskellperc">13.7%</div>
     
-    <div id="Shellperc">7.2%</div>
+    <div id="Shellperc">6.7%</div>
+    
+    <div id="Erlangperc">6.6%</div>
     
             </div>
 
@@ -183,6 +194,8 @@
     <div id="Haskelltext">Haskell</div>  
     
     <div id="Shelltext">Shell</div>  
+    
+    <div id="Erlangtext">Erlang</div>  
     
             </div>
         
