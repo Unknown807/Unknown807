@@ -28,11 +28,11 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 47.8fr 29.0fr 11.0fr 8.6fr 3.5fr;
+                    grid-template-columns: 47.7fr 29.0fr 11.0fr 8.6fr 3.7fr;
 		}
 
 		#other-langs {
-                    grid-template-columns: 46.9fr 26.1fr 13.7fr 6.7fr 6.6fr;
+                    grid-template-columns: 41.2fr 27.6fr 15.3fr 8.0fr 4.0fr 3.9fr;
 		}
 
                 .legend {
@@ -42,6 +42,15 @@
                 }
             
                 
+    #TypeScriptperc {
+        background: #2b7489;
+    }
+
+    #TypeScripttext {
+        color: #2b7489;
+        font-size: 24px;
+    }
+    
     #Kotlinperc {
         background: #A97BFF;
     }
@@ -124,12 +133,12 @@
         font-size: 24px;
     }
     
-    #TypeScriptperc {
-        background: #2b7489;
+    #C#perc {
+        background: #178600;
     }
 
-    #TypeScripttext {
-        color: #2b7489;
+    #C#text {
+        color: #178600;
         font-size: 24px;
     }
     
@@ -139,7 +148,7 @@
             
             <div id="top-5-langs">
                 
-    <div id="Javaperc">47.8%</div>
+    <div id="Javaperc">47.7%</div>
     
     <div id="Pythonperc">29.0%</div>
     
@@ -147,7 +156,7 @@
     
     <div id="JavaScriptperc">8.6%</div>
     
-    <div id="TypeScriptperc">3.5%</div>
+    <div id="C#perc">3.7%</div>
     
             </div>
 
@@ -163,7 +172,7 @@
     
     <div id="JavaScripttext">JavaScript</div>  
     
-    <div id="TypeScripttext">TypeScript</div>  
+    <div id="C#text">C#</div>  
     
             </div>
 
@@ -171,15 +180,17 @@
             
             <div id="other-langs">
                 
-    <div id="Kotlinperc">46.9%</div>
+    <div id="TypeScriptperc">41.2%</div>
     
-    <div id="Rperc">26.1%</div>
+    <div id="Kotlinperc">27.6%</div>
     
-    <div id="Haskellperc">13.7%</div>
+    <div id="Rperc">15.3%</div>
     
-    <div id="Shellperc">6.7%</div>
+    <div id="Haskellperc">8.0%</div>
     
-    <div id="Erlangperc">6.6%</div>
+    <div id="Shellperc">4.0%</div>
+    
+    <div id="Erlangperc">3.9%</div>
     
             </div>
 
@@ -187,6 +198,8 @@
                 
             <div class="legend">
                 
+    <div id="TypeScripttext">TypeScript</div>  
+    
     <div id="Kotlintext">Kotlin</div>  
     
     <div id="Rtext">R</div>  
