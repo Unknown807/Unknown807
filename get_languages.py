@@ -21,6 +21,7 @@ for repo in user.get_repos():
 all_langs.pop('HTML', None)
 all_langs.pop('CSS', None)
 all_langs.pop('Twig', None)
+all_langs["CSharp"] = all_langs.pop("C#")
 	
 sorted_langs = sorted(all_langs, key=lambda x: all_langs[x])[::-1]
 
@@ -36,8 +37,6 @@ for k, v in all_langs.items():
         chosen_total = top_5_total
 
     all_langs[k] = round(v/chosen_total*100, 1)
-
-sorted_langs = sorted(all_langs, key=lambda x: all_langs[x])[::-1]
 
 other_langs_anim = """"""
 other_langs_div = """"""
