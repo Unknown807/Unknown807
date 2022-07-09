@@ -133,11 +133,11 @@
         font-size: 24px;
     }
     
-    #C#perc {
+    #CSharpperc {
         background: #178600;
     }
 
-    #C#text {
+    #CSharptext {
         color: #178600;
         font-size: 24px;
     }
@@ -156,7 +156,7 @@
     
     <div id="JavaScriptperc">8.6%</div>
     
-    <div id="C#perc">3.7%</div>
+    <div id="CSharpperc">3.7%</div>
     
             </div>
 
@@ -172,7 +172,7 @@
     
     <div id="JavaScripttext">JavaScript</div>  
     
-    <div id="C#text">C#</div>  
+    <div id="CSharptext">CSharp</div>  
     
             </div>
 
