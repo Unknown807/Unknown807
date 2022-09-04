@@ -1,6 +1,6 @@
 ## Hi There 👋
 
-Last Updated: 2022-08-28-02:08:57
+Last Updated: 2022-09-04-01:57:03
 
 I've always been interested in creating new and optimal solutions to problems I encounter. It has led me to become interested in programming and new practical technologies and passionate about Computer Science overall.
 
