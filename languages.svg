@@ -28,11 +28,11 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 47.1fr 29.8fr 10.9fr 8.5fr 3.6fr;
+                    grid-template-columns: 47.1fr 29.7fr 11.2fr 8.1fr 3.8fr;
 		}
 
 		#other-langs {
-                    grid-template-columns: 41.2fr 27.6fr 15.3fr 8.0fr 4.0fr 3.9fr;
+                    grid-template-columns: 42.1fr 26.0fr 15.7fr 8.2fr 4.1fr 4.0fr;
 		}
 
                 .legend {
@@ -150,13 +150,13 @@
                 
     <div id="Javaperc">47.1%</div>
     
-    <div id="Pythonperc">29.8%</div>
+    <div id="Pythonperc">29.7%</div>
     
-    <div id="PHPperc">10.9%</div>
+    <div id="PHPperc">11.2%</div>
     
-    <div id="JavaScriptperc">8.5%</div>
+    <div id="JavaScriptperc">8.1%</div>
     
-    <div id="CSharpperc">3.6%</div>
+    <div id="CSharpperc">3.8%</div>
     
             </div>
 
@@ -180,17 +180,17 @@
             
             <div id="other-langs">
                 
-    <div id="TypeScriptperc">41.2%</div>
+    <div id="TypeScriptperc">42.1%</div>
     
-    <div id="Kotlinperc">27.6%</div>
+    <div id="Kotlinperc">26.0%</div>
     
-    <div id="Rperc">15.3%</div>
+    <div id="Rperc">15.7%</div>
     
-    <div id="Haskellperc">8.0%</div>
+    <div id="Haskellperc">8.2%</div>
     
-    <div id="Shellperc">4.0%</div>
+    <div id="Shellperc">4.1%</div>
     
-    <div id="Erlangperc">3.9%</div>
+    <div id="Erlangperc">4.0%</div>
     
             </div>
 
