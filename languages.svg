@@ -28,11 +28,11 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 47.1fr 29.7fr 11.2fr 8.1fr 3.8fr;
+                    grid-template-columns: 46.9fr 29.6fr 11.2fr 8.1fr 4.2fr;
 		}
 
 		#other-langs {
-                    grid-template-columns: 42.1fr 26.0fr 15.7fr 8.2fr 4.1fr 4.0fr;
+                    grid-template-columns: 30.5fr 29.2fr 18.1fr 10.9fr 5.7fr 2.8fr 2.8fr;
 		}
 
                 .legend {
@@ -42,6 +42,15 @@
                 }
             
                 
+    #CSharpperc {
+        background: #178600;
+    }
+
+    #CSharptext {
+        color: #178600;
+        font-size: 24px;
+    }
+    
     #TypeScriptperc {
         background: #2b7489;
     }
@@ -133,12 +142,12 @@
         font-size: 24px;
     }
     
-    #CSharpperc {
-        background: #178600;
+    #Dartperc {
+        background: #00B4AB;
     }
 
-    #CSharptext {
-        color: #178600;
+    #Darttext {
+        color: #00B4AB;
         font-size: 24px;
     }
     
@@ -148,15 +157,15 @@
             
             <div id="top-5-langs">
                 
-    <div id="Javaperc">47.1%</div>
+    <div id="Javaperc">46.9%</div>
     
-    <div id="Pythonperc">29.7%</div>
+    <div id="Pythonperc">29.6%</div>
     
     <div id="PHPperc">11.2%</div>
     
     <div id="JavaScriptperc">8.1%</div>
     
-    <div id="CSharpperc">3.8%</div>
+    <div id="Dartperc">4.2%</div>
     
             </div>
 
@@ -172,7 +181,7 @@
     
     <div id="JavaScripttext">JavaScript</div>  
     
-    <div id="CSharptext">CSharp</div>  
+    <div id="Darttext">Dart</div>  
     
             </div>
 
@@ -180,17 +189,19 @@
             
             <div id="other-langs">
                 
-    <div id="TypeScriptperc">42.1%</div>
+    <div id="CSharpperc">30.5%</div>
     
-    <div id="Kotlinperc">26.0%</div>
+    <div id="TypeScriptperc">29.2%</div>
     
-    <div id="Rperc">15.7%</div>
+    <div id="Kotlinperc">18.1%</div>
     
-    <div id="Haskellperc">8.2%</div>
+    <div id="Rperc">10.9%</div>
     
-    <div id="Shellperc">4.1%</div>
+    <div id="Haskellperc">5.7%</div>
     
-    <div id="Erlangperc">4.0%</div>
+    <div id="Shellperc">2.8%</div>
+    
+    <div id="Erlangperc">2.8%</div>
     
             </div>
 
@@ -198,6 +209,8 @@
                 
             <div class="legend">
                 
+    <div id="CSharptext">CSharp</div>  
+    
     <div id="TypeScripttext">TypeScript</div>  
     
     <div id="Kotlintext">Kotlin</div>  
