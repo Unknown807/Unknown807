@@ -1,6 +1,6 @@
 ## Hi There 👋
 
-Last Updated: 2024-06-06-14:33:16
+Last Updated: 2024-06-06-14:36:19
 
 I enjoy creating new and effective solutions to problems I encounter, which sparked my interest in programming, practical technologies, and fueled my passion for Computer Science.
 
@@ -23,18 +23,15 @@ In my personal projects, I focus on thorough planning, research, and design. Her
     <img src="/toolimgs/jquery.svg", width="75", height="75"/>
     <img src="/toolimgs/nodejs.svg", width="75", height="75"/>
     <img src="/toolimgs/electron.svg", width="75", height="75"/>
-    
     <img src="/toolimgs/dotnet.svg", width="75", height="75"/>
     <img src="/toolimgs/dotnetcore.svg", width="75", height="75"/>
     <img src="/toolimgs/flutter.svg", width="75", height="75"/>
     <img src="/toolimgs/bloc.png", width="75", height="75"/>
-
     <img src="/toolimgs/mongodb.svg", width="75", height="75"/>
     <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
     <img src="/toolimgs/mysql.svg", width="75", height="75"/>
     <img src="/toolimgs/atlassian.svg", width="75", height="75"/>
     <img src="/toolimgs/azure.svg", width="75", height="75"/>
-
     <img src="/toolimgs/androidstudio.svg", width="75", height="75"/>
     <img src="/toolimgs/visualstudio.svg", width="75", height="75"/>
     <img src="/toolimgs/vscode.svg", width="75", height="75"/>
