@@ -32,7 +32,7 @@
 		}
 
 		#other-langs {
-                    grid-template-columns: 35.7fr 15.9fr 14.2fr 11.3fr 9.9fr 5.9fr 3.1fr 1.5fr 1.5fr 0.8fr;
+                    grid-template-columns: 40.2fr 17.9fr 16.1fr 11.2fr 6.7fr;
 		}
 
                 .legend {
@@ -60,21 +60,12 @@
         font-size: 24px;
     }
     
-    #C++perc {
+    #CPPperc {
         background: #f34b7d;
     }
 
-    #C++text {
+    #CPPtext {
         color: #f34b7d;
-        font-size: 24px;
-    }
-    
-    #CMakeperc {
-        background: black;
-    }
-
-    #CMaketext {
-        color: black;
         font-size: 24px;
     }
     
@@ -93,42 +84,6 @@
 
     #Rtext {
         color: #198CE7;
-        font-size: 24px;
-    }
-    
-    #Haskellperc {
-        background: #5e5086;
-    }
-
-    #Haskelltext {
-        color: #5e5086;
-        font-size: 24px;
-    }
-    
-    #Shellperc {
-        background: #89e051;
-    }
-
-    #Shelltext {
-        color: #89e051;
-        font-size: 24px;
-    }
-    
-    #Erlangperc {
-        background: #B83998;
-    }
-
-    #Erlangtext {
-        color: #B83998;
-        font-size: 24px;
-    }
-    
-    #Cperc {
-        background: #555555;
-    }
-
-    #Ctext {
-        color: #555555;
         font-size: 24px;
     }
     
@@ -200,7 +155,7 @@
             
             <div class="legend">
                 
-    <div id="CSharptext">CSharp</div>  
+    <div id="CSharptext">C#</div>  
     
     <div id="Darttext">Dart</div>  
     
@@ -216,25 +171,15 @@
             
             <div id="other-langs">
                 
-    <div id="JavaScriptperc">35.7%</div>
+    <div id="JavaScriptperc">40.2%</div>
     
-    <div id="TypeScriptperc">15.9%</div>
+    <div id="TypeScriptperc">17.9%</div>
     
-    <div id="C++perc">14.2%</div>
+    <div id="CPPperc">16.1%</div>
     
-    <div id="CMakeperc">11.3%</div>
+    <div id="Kotlinperc">11.2%</div>
     
-    <div id="Kotlinperc">9.9%</div>
-    
-    <div id="Rperc">5.9%</div>
-    
-    <div id="Haskellperc">3.1%</div>
-    
-    <div id="Shellperc">1.5%</div>
-    
-    <div id="Erlangperc">1.5%</div>
-    
-    <div id="Cperc">0.8%</div>
+    <div id="Rperc">6.7%</div>
     
             </div>
 
@@ -246,21 +191,11 @@
     
     <div id="TypeScripttext">TypeScript</div>  
     
-    <div id="C++text">C++</div>  
-    
-    <div id="CMaketext">CMake</div>  
+    <div id="CPPtext">C++</div>  
     
     <div id="Kotlintext">Kotlin</div>  
     
     <div id="Rtext">R</div>  
-    
-    <div id="Haskelltext">Haskell</div>  
-    
-    <div id="Shelltext">Shell</div>  
-    
-    <div id="Erlangtext">Erlang</div>  
-    
-    <div id="Ctext">C</div>  
     
             </div>
         

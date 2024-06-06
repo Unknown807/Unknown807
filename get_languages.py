@@ -8,6 +8,7 @@ user = g.get_user("Unknown807")
 
 with open("colours.json", "r") as f:
     lang_colours = json.load(f)
+    lang_colours["CPP"] = lang_colours.pop("C++")
 
 all_langs = {}
 
@@ -21,6 +22,10 @@ for repo in user.get_repos():
 all_langs.pop('HTML', None)
 all_langs.pop('CSS', None)
 all_langs.pop('Twig', None)
+all_langs.pop('CMake', None)
+
+# These need to be renamed
+all_langs["CPP"] = all_langs.pop("C++")
 all_langs["CSharp"] = all_langs.pop("C#")
 	
 sorted_langs = sorted(all_langs, key=lambda x: all_langs[x])[::-1]
@@ -31,12 +36,22 @@ top_5_total = sum([v for k, v in all_langs.items() if k in top_5_langs])
 other_langs = sorted_langs[5:]
 other_total = sum([v for k, v in all_langs.items() if k in other_langs])
 
+to_remove = []
 for k, v in all_langs.items():
     chosen_total = other_total
     if k in top_5_langs:
         chosen_total = top_5_total
 
-    all_langs[k] = round(v/chosen_total*100, 1)
+    proportion = round(v/chosen_total*100, 1)
+
+    if k in other_langs and proportion < 5:
+        to_remove.append(k)
+    else:
+        all_langs[k] = proportion
+
+for k in to_remove:
+    other_langs.remove(k)
+    all_langs.pop(k, None)
 
 other_langs_anim = """"""
 other_langs_div = """"""
@@ -170,6 +185,9 @@ svg = """<svg style="background-color: white;" fill="none" viewBox="0 0 500 400"
     other_langs_legend,
 )
 
+svg = svg.replace(">CSharp", ">C#")
+svg = svg.replace(">CPP", ">C++")
+
 with open("languages.svg", "w") as f:
     f.write(svg)
 
@@ -177,9 +195,9 @@ new_readme = """## Hi There 👋
 
 Last Updated: {}
 
-I've always been interested in creating new and optimal solutions to problems I encounter. It has led me to become interested in programming and new practical technologies and passionate about Computer Science overall.
+I enjoy creating new and effective solutions to problems I encounter, which sparked my interest in programming, practical technologies, and fueled my passion for Computer Science.
 
-I create many personal projects and always do a lot of planning, research and design. Here are some of the languages and tools I have used the most:
+In my personal projects, I focus on thorough planning, research, and design. Here are some of the languages and tools I have been using the most:
 
 ## Programming Languages
 
@@ -233,5 +251,5 @@ One of my favourite games to play is Hearthstone, so I made a fun pack opening a
 </div>
 """.format(datetime.today().strftime('%Y-%m-%d-%H:%M:%S'))
 
-with open("README.md", "w") as f:
+with open("README.md", "w", encoding="utf-8") as f:
     f.write(new_readme)

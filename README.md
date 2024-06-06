@@ -1,10 +1,10 @@
 ## Hi There 👋
 
-Last Updated: 2024-06-06-12:52:12
+Last Updated: 2024-06-06-14:39:25
 
-I've always been interested in creating new and optimal solutions to problems I encounter. It has led me to become interested in programming and new practical technologies and passionate about Computer Science overall.
+I enjoy creating new and effective solutions to problems I encounter, which sparked my interest in programming, practical technologies, and fueled my passion for Computer Science.
 
-I create many personal projects and always do a lot of planning, research and design. Here are some of the languages and tools I have used the most:
+In my personal projects, I focus on thorough planning, research, and design. Here are some of the languages and tools I have been using the most:
 
 ## Programming Languages
 
