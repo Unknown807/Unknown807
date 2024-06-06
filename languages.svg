@@ -28,11 +28,11 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 46.9fr 29.6fr 11.2fr 8.1fr 4.2fr;
+                    grid-template-columns: 54.6fr 22.2fr 12.4fr 7.8fr 3.0fr;
 		}
 
 		#other-langs {
-                    grid-template-columns: 30.5fr 29.2fr 18.1fr 10.9fr 5.7fr 2.8fr 2.8fr;
+                    grid-template-columns: 35.7fr 15.9fr 14.2fr 11.3fr 9.9fr 5.9fr 3.1fr 1.5fr 1.5fr 0.8fr;
 		}
 
                 .legend {
@@ -42,12 +42,12 @@
                 }
             
                 
-    #CSharpperc {
-        background: #178600;
+    #JavaScriptperc {
+        background: #f1e05a;
     }
 
-    #CSharptext {
-        color: #178600;
+    #JavaScripttext {
+        color: #f1e05a;
         font-size: 24px;
     }
     
@@ -57,6 +57,24 @@
 
     #TypeScripttext {
         color: #2b7489;
+        font-size: 24px;
+    }
+    
+    #C++perc {
+        background: #f34b7d;
+    }
+
+    #C++text {
+        color: #f34b7d;
+        font-size: 24px;
+    }
+    
+    #CMakeperc {
+        background: black;
+    }
+
+    #CMaketext {
+        color: black;
         font-size: 24px;
     }
     
@@ -105,7 +123,34 @@
         font-size: 24px;
     }
     
+    #Cperc {
+        background: #555555;
+    }
+
+    #Ctext {
+        color: #555555;
+        font-size: 24px;
+    }
+    
                 
+    #CSharpperc {
+        background: #178600;
+    }
+
+    #CSharptext {
+        color: #178600;
+        font-size: 24px;
+    }
+    
+    #Dartperc {
+        background: #00B4AB;
+    }
+
+    #Darttext {
+        color: #00B4AB;
+        font-size: 24px;
+    }
+    
     #Javaperc {
         background: #b07219;
     }
@@ -133,39 +178,21 @@
         font-size: 24px;
     }
     
-    #JavaScriptperc {
-        background: #f1e05a;
-    }
-
-    #JavaScripttext {
-        color: #f1e05a;
-        font-size: 24px;
-    }
-    
-    #Dartperc {
-        background: #00B4AB;
-    }
-
-    #Darttext {
-        color: #00B4AB;
-        font-size: 24px;
-    }
-    
             </style>
 
             <h3>My Top 5 Used Languages</h3>
             
             <div id="top-5-langs">
                 
-    <div id="Javaperc">46.9%</div>
+    <div id="CSharpperc">54.6%</div>
     
-    <div id="Pythonperc">29.6%</div>
+    <div id="Dartperc">22.2%</div>
     
-    <div id="PHPperc">11.2%</div>
+    <div id="Javaperc">12.4%</div>
     
-    <div id="JavaScriptperc">8.1%</div>
+    <div id="Pythonperc">7.8%</div>
     
-    <div id="Dartperc">4.2%</div>
+    <div id="PHPperc">3.0%</div>
     
             </div>
 
@@ -173,15 +200,15 @@
             
             <div class="legend">
                 
+    <div id="CSharptext">CSharp</div>  
+    
+    <div id="Darttext">Dart</div>  
+    
     <div id="Javatext">Java</div>  
     
     <div id="Pythontext">Python</div>  
     
     <div id="PHPtext">PHP</div>  
-    
-    <div id="JavaScripttext">JavaScript</div>  
-    
-    <div id="Darttext">Dart</div>  
     
             </div>
 
@@ -189,19 +216,25 @@
             
             <div id="other-langs">
                 
-    <div id="CSharpperc">30.5%</div>
+    <div id="JavaScriptperc">35.7%</div>
     
-    <div id="TypeScriptperc">29.2%</div>
+    <div id="TypeScriptperc">15.9%</div>
     
-    <div id="Kotlinperc">18.1%</div>
+    <div id="C++perc">14.2%</div>
     
-    <div id="Rperc">10.9%</div>
+    <div id="CMakeperc">11.3%</div>
     
-    <div id="Haskellperc">5.7%</div>
+    <div id="Kotlinperc">9.9%</div>
     
-    <div id="Shellperc">2.8%</div>
+    <div id="Rperc">5.9%</div>
     
-    <div id="Erlangperc">2.8%</div>
+    <div id="Haskellperc">3.1%</div>
+    
+    <div id="Shellperc">1.5%</div>
+    
+    <div id="Erlangperc">1.5%</div>
+    
+    <div id="Cperc">0.8%</div>
     
             </div>
 
@@ -209,9 +242,13 @@
                 
             <div class="legend">
                 
-    <div id="CSharptext">CSharp</div>  
+    <div id="JavaScripttext">JavaScript</div>  
     
     <div id="TypeScripttext">TypeScript</div>  
+    
+    <div id="C++text">C++</div>  
+    
+    <div id="CMaketext">CMake</div>  
     
     <div id="Kotlintext">Kotlin</div>  
     
@@ -222,6 +259,8 @@
     <div id="Shelltext">Shell</div>  
     
     <div id="Erlangtext">Erlang</div>  
+    
+    <div id="Ctext">C</div>  
     
             </div>
         
