@@ -210,20 +210,29 @@ In my personal projects, I focus on thorough planning, research, and design. Her
 ## Favourite Tools
 
 <div align="center">
+    <img src="/toolimgs/angular.svg", width="75", height="75"/>
     <img src="/toolimgs/bootstrap.svg", width="75", height="75"/>
-    <img src="/toolimgs/css3.svg", width="75", height="75"/>
-    <img src="/toolimgs/html5.svg", width="75", height="75"/>
     <img src="/toolimgs/codeigniter.svg", width="75", height="75"/>
     <img src="/toolimgs/jquery.svg", width="75", height="75"/>
-    <img src="/toolimgs/vscode.svg", width="75", height="75"/>
-    <img src="/toolimgs/intellij.svg", width="75", height="75"/>
-    <img src="/toolimgs/composer.svg", width="75", height="75"/>
-    <img src="/toolimgs/linux.svg", width="75", height="75"/>
-    <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
-    <img src="/toolimgs/mysql.svg", width="75", height="75"/>
     <img src="/toolimgs/nodejs.svg", width="75", height="75"/>
     <img src="/toolimgs/electron.svg", width="75", height="75"/>
-    <img src="/toolimgs/trello.svg", width="75", height="75"/>
+    
+    <img src="/toolimgs/dotnet.svg", width="75", height="75"/>
+    <img src="/toolimgs/dotnetcore.svg", width="75", height="75"/>
+    <img src="/toolimgs/flutter.svg", width="75", height="75"/>
+    <img src="/toolimgs/bloc.png", width="75", height="75"/>
+
+    <img src="/toolimgs/mongodb.svg", width="75", height="75"/>
+    <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
+    <img src="/toolimgs/mysql.svg", width="75", height="75"/>
+    <img src="/toolimgs/atlassian.svg", width="75", height="75"/>
+    <img src="/toolimgs/azure.svg", width="75", height="75"/>
+
+    <img src="/toolimgs/androidstudio.svg", width="75", height="75"/>
+    <img src="/toolimgs/visualstudio.svg", width="75", height="75"/>
+    <img src="/toolimgs/vscode.svg", width="75", height="75"/>
+    <img src="/toolimgs/intellij.svg", width="75", height="75"/>
+    <img src="/toolimgs/pycharm.svg", width="75", height="75"/>
 </div>
 
 <br />
