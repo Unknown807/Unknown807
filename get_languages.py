@@ -216,18 +216,15 @@ In my personal projects, I focus on thorough planning, research, and design. Her
     <img src="/toolimgs/jquery.svg", width="75", height="75"/>
     <img src="/toolimgs/nodejs.svg", width="75", height="75"/>
     <img src="/toolimgs/electron.svg", width="75", height="75"/>
-    
     <img src="/toolimgs/dotnet.svg", width="75", height="75"/>
     <img src="/toolimgs/dotnetcore.svg", width="75", height="75"/>
     <img src="/toolimgs/flutter.svg", width="75", height="75"/>
     <img src="/toolimgs/bloc.png", width="75", height="75"/>
-
     <img src="/toolimgs/mongodb.svg", width="75", height="75"/>
     <img src="/toolimgs/postgresql.svg", width="75", height="75"/>
     <img src="/toolimgs/mysql.svg", width="75", height="75"/>
     <img src="/toolimgs/atlassian.svg", width="75", height="75"/>
     <img src="/toolimgs/azure.svg", width="75", height="75"/>
-
     <img src="/toolimgs/androidstudio.svg", width="75", height="75"/>
     <img src="/toolimgs/visualstudio.svg", width="75", height="75"/>
     <img src="/toolimgs/vscode.svg", width="75", height="75"/>
