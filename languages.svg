@@ -32,7 +32,7 @@
 		}
 
 		#other-langs {
-                    grid-template-columns: 40.2fr 17.9fr 16.1fr 11.2fr 6.7fr;
+                    grid-template-columns: 38.7fr 30.6fr 11.8fr 8.2fr;
 		}
 
                 .legend {
@@ -42,21 +42,21 @@
                 }
             
                 
-    #JavaScriptperc {
-        background: #f1e05a;
-    }
-
-    #JavaScripttext {
-        color: #f1e05a;
-        font-size: 24px;
-    }
-    
     #TypeScriptperc {
         background: #2b7489;
     }
 
     #TypeScripttext {
         color: #2b7489;
+        font-size: 24px;
+    }
+    
+    #JavaScriptperc {
+        background: #f1e05a;
+    }
+
+    #JavaScripttext {
+        color: #f1e05a;
         font-size: 24px;
     }
     
@@ -75,15 +75,6 @@
 
     #Kotlintext {
         color: #A97BFF;
-        font-size: 24px;
-    }
-    
-    #Rperc {
-        background: #198CE7;
-    }
-
-    #Rtext {
-        color: #198CE7;
         font-size: 24px;
     }
     
@@ -171,15 +162,13 @@
             
             <div id="other-langs">
                 
-    <div id="JavaScriptperc">40.2%</div>
+    <div id="TypeScriptperc">38.7%</div>
     
-    <div id="TypeScriptperc">17.9%</div>
+    <div id="JavaScriptperc">30.6%</div>
     
-    <div id="CPPperc">16.1%</div>
+    <div id="CPPperc">11.8%</div>
     
-    <div id="Kotlinperc">11.2%</div>
-    
-    <div id="Rperc">6.7%</div>
+    <div id="Kotlinperc">8.2%</div>
     
             </div>
 
@@ -187,15 +176,13 @@
                 
             <div class="legend">
                 
-    <div id="JavaScripttext">JavaScript</div>  
-    
     <div id="TypeScripttext">TypeScript</div>  
+    
+    <div id="JavaScripttext">JavaScript</div>  
     
     <div id="CPPtext">C++</div>  
     
     <div id="Kotlintext">Kotlin</div>  
-    
-    <div id="Rtext">R</div>  
     
             </div>
         
