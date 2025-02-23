@@ -28,7 +28,7 @@
 		}
 
 		#top-5-langs {
-                    grid-template-columns: 54.6fr 22.2fr 12.4fr 7.9fr 3.0fr;
+                    grid-template-columns: 55.6fr 21.7fr 12.1fr 7.7fr 2.9fr;
 		}
 
 		#other-langs {
@@ -130,15 +130,15 @@
             
             <div id="top-5-langs">
                 
-    <div id="CSharpperc">54.6%</div>
+    <div id="CSharpperc">55.6%</div>
     
-    <div id="Dartperc">22.2%</div>
+    <div id="Dartperc">21.7%</div>
     
-    <div id="Javaperc">12.4%</div>
+    <div id="Javaperc">12.1%</div>
     
-    <div id="Pythonperc">7.9%</div>
+    <div id="Pythonperc">7.7%</div>
     
-    <div id="PHPperc">3.0%</div>
+    <div id="PHPperc">2.9%</div>
     
             </div>
 
